@@ -9,9 +9,11 @@ export default Ember.Component.extend({
 
   didInsertElement: function() {
     var searchList = this.$(this.get('searchList'));
-    if (searchList.length < 1) {
-      throw new Error('There is no search list available within the search bar component.');
-    }
+
+    // In case where we just want the component while adding your own list logic
+    // if (searchList.length < 1) {
+    //   throw new Error('There is no search list available within the search bar component.');
+    // }
     if (searchList.length > 1) {
       throw new Error('There is more then one search list available within the search component.');
     }
