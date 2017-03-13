@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: '',
   searchList: '.list-block-search',
   searchIn: undefined,
   placeholder: 'Search',
